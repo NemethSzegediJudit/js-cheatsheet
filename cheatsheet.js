@@ -37,6 +37,7 @@ function aFunction1() {
     return "this is a function"
 }
 
+//A return 2 dolgot csinál: lezár egy folyamatot és visszaad egy értéket. A return alatti dolgok nem futnak le.
 
 const aFunction2 = function () {
     //Ez is egy függvény, majdnem ugyanúgy viselkedik, mintha a függvénynek neve lenne.
@@ -47,3 +48,29 @@ const aFunction2 = function () {
 console.log(aFunction1()); //Ez is működik.
 
 console.log(aFunction2()); //Minden változóba mentett dolgunkhoz csak azokban a sorokban férünk hozzá, amelyek utána jönnek.
+
+
+if (true) {
+    //ide jön az, ha teljesül a feltételünk
+}
+else {
+    //ide jön az, ha nem teljesül a feltételünk
+}
+
+console.log("0" == 0);
+console.log("0" === 0);
+//3db = összehasonlításra használjuk
+
+//tömb/felsorolás - for ciklussal lehet rajtuk végigmenni
+
+const arr = [34, 15, 88, 2] //ez egy tömb, hiszen négyzetes zárójelben vannak
+
+for (let index = 0; index < arr.length; index++) {
+    console.log(arr[index])
+}
+
+for (const item of arr) {
+    console.log(item)
+}
+
+//ez a 2 ugyanazt csinálja, a cikluson belül ugyanúgy tudunk ifelni
